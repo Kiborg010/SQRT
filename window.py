@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
 "")
         self.text_result.setObjectName("text_result")
         self.btn_comply = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_comply.setGeometry(QtCore.QRect(310, 250, 301, 61))
+        self.btn_comply.setGeometry(QtCore.QRect(490, 250, 301, 61))
         font = QtGui.QFont()
         font.setPointSize(23)
         self.btn_comply.setFont(font)
@@ -142,7 +142,7 @@ class Ui_MainWindow(object):
 "border: 5px solid rgb(0, 85, 127);")
         self.result.setObjectName("result")
         self.btn_clear = QtWidgets.QPushButton(self.centralwidget)
-        self.btn_clear.setGeometry(QtCore.QRect(750, 250, 191, 61))
+        self.btn_clear.setGeometry(QtCore.QRect(820, 250, 191, 61))
         font = QtGui.QFont()
         font.setPointSize(23)
         self.btn_clear.setFont(font)
@@ -151,6 +151,17 @@ class Ui_MainWindow(object):
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(255, 255, 0);")
         self.btn_clear.setObjectName("btn_clear")
+        self.text_error = QtWidgets.QTextBrowser(self.centralwidget)
+        self.text_error.setGeometry(QtCore.QRect(20, 250, 261, 61))
+        font = QtGui.QFont()
+        font.setPointSize(22)
+        self.text_error.setFont(font)
+        self.text_error.setStyleSheet("background-color: rgb(255, 153, 64);\n"
+"border-radius: 10px;\n"
+"border: 5px solid rgb(0, 85, 127);\n"
+"color: rgb(0, 85, 127);\n"
+"")
+        self.text_error.setObjectName("text_error")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1024, 21))

@@ -224,7 +224,7 @@ color: rgb(0, 85, 127);
    <widget class="QPushButton" name="btn_comply">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>490</x>
       <y>250</y>
       <width>301</width>
       <height>61</height>
@@ -308,7 +308,7 @@ border: 5px solid rgb(0, 85, 127);</string>
    <widget class="QPushButton" name="btn_clear">
     <property name="geometry">
      <rect>
-      <x>750</x>
+      <x>820</x>
       <y>250</y>
       <width>191</width>
       <height>61</height>
@@ -327,6 +327,28 @@ color: rgb(255, 255, 0);</string>
     </property>
     <property name="text">
      <string>Очистить</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="text_error">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>261</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 153, 64);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(0, 85, 127);
+</string>
     </property>
    </widget>
   </widget>
