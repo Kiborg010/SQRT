@@ -3,8 +3,8 @@ from math import sqrt
 from PyQt5.Qt import QUrl, QDesktopServices
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5 import QtWidgets
-
 from window import Ui_MainWindow
+
 
 class Screen_1(QMainWindow, Ui_MainWindow):
     def __init__(self):
@@ -13,6 +13,7 @@ class Screen_1(QMainWindow, Ui_MainWindow):
         self.btn_change_lang.clicked.connect(self.change_lang)
         self.btn_sup_serv.clicked.connect(self.sup_serv)
         self.btn_comply.clicked.connect(self.comply)
+        self.btn_clear.clicked.connect(self.clear)
 
     def change_lang(self):
         lang = self.choice_lang.currentText()
@@ -23,6 +24,7 @@ class Screen_1(QMainWindow, Ui_MainWindow):
             self.text_detail.setText("Точность:")
             self.btn_sup_serv.setText("Служба поддержки")
             self.text_lang.setText("Язык:")
+            self.btn_clear.setText("Очистить")
         elif lang == "English":
             self.text_input.setText("Input:")
             self.btn_comply.setText("Comply")
@@ -30,6 +32,7 @@ class Screen_1(QMainWindow, Ui_MainWindow):
             self.text_detail.setText("Accuracy:")
             self.btn_sup_serv.setText("Support service")
             self.text_lang.setText("Language:")
+            self.btn_clear.setText("Clear")
         elif lang == "中文":
             self.text_input.setText("输入:")
             self.btn_comply.setText("表演/表演")
@@ -37,6 +40,7 @@ class Screen_1(QMainWindow, Ui_MainWindow):
             self.text_detail.setText("准确度:")
             self.btn_sup_serv.setText("支援服务")
             self.text_lang.setText("语言:")
+            self.btn_clear.setText("擦除")
         elif lang == "Español":
             self.text_input.setText("Entrada:")
             self.btn_comply.setText("Ejecutar")
@@ -44,6 +48,7 @@ class Screen_1(QMainWindow, Ui_MainWindow):
             self.text_detail.setText("Precisión:")
             self.btn_sup_serv.setText("Servicio al cliente")
             self.text_lang.setText("Idioma:")
+            self.btn_clear.setText("Barrer")
 
     def test_number(self, input):
         true = "0123456789"
@@ -52,7 +57,6 @@ class Screen_1(QMainWindow, Ui_MainWindow):
             if el in true:
                 count_true += 1
         return count_true == len(input)
-
 
     def sup_serv(self):
         url = QUrl("https://www.hse.ru/org/persons/4200771")
@@ -69,6 +73,11 @@ class Screen_1(QMainWindow, Ui_MainWindow):
         else:
             self.result.setText("")
 
+    def clear(self):
+        self.input_data.setText("")
+        self.result.setText("")
+
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     widget = QtWidgets.QStackedWidget()
@@ -78,5 +87,3 @@ if __name__ == "__main__":
     widget.setFixedWidth(1024)
     widget.show()
     sys.exit(app.exec_())
-
-
