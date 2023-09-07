@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 241, 52, 255), stop:1 rgba(255, 111, 111, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="b_sl_pod">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>470</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));
+border-radius: 30px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>Служба поддержки</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="txt_lang">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>420</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>27</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 153, 64);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(0, 85, 127);
+</string>
+    </property>
+    <property name="text">
+     <string>Язык:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="vibor_lang">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>420</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 153, 64);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(0, 85, 127);
+</string>
+    </property>
+    <property name="maxVisibleItems">
+     <number>10</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Русский</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>English</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>中文</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Español</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="b_smn_lang">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>430</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>4</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));
+border-radius: 40px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../files_to_del/button_1.png</normaloff>../../files_to_del/button_1.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_toch">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>310</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>27</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 153, 64);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(0, 85, 127);
+</string>
+    </property>
+    <property name="text">
+     <string>Точность:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="txt_vvod">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>27</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 153, 64);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(0, 85, 127);
+</string>
+    </property>
+    <property name="text">
+     <string>Ввод:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_otvet">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>27</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 153, 64);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(0, 85, 127);
+
+</string>
+    </property>
+    <property name="text">
+     <string>Ответ:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_vyp">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>100</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));
+border-radius: 30px;
+border: 5px solid rgb(0, 85, 127);
+color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>Выполнить</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="vvod_otvet">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>0</y>
+      <width>821</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="vvod_toch">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>310</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="vivid_otvet">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>180</y>
+      <width>821</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+border: 5px solid rgb(0, 85, 127);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
