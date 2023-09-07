@@ -18,129 +18,129 @@ class Ui_MainWindow(object):
         MainWindow.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 241, 52, 255), stop:1 rgba(255, 111, 111, 255));")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.b_sl_pod = QtWidgets.QPushButton(self.centralwidget)
-        self.b_sl_pod.setGeometry(QtCore.QRect(20, 40, 301, 61))
+        self.btn_sup_serv = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_sup_serv.setGeometry(QtCore.QRect(20, 40, 301, 61))
         font = QtGui.QFont()
         font.setPointSize(23)
-        self.b_sl_pod.setFont(font)
-        self.b_sl_pod.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));\n"
+        self.btn_sup_serv.setFont(font)
+        self.btn_sup_serv.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));\n"
 "border-radius: 30px;\n"
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(255, 255, 0);")
-        self.b_sl_pod.setObjectName("b_sl_pod")
-        self.txt_lang = QtWidgets.QLabel(self.centralwidget)
-        self.txt_lang.setGeometry(QtCore.QRect(360, 0, 211, 61))
+        self.btn_sup_serv.setObjectName("btn_sup_serv")
+        self.text_lang = QtWidgets.QLabel(self.centralwidget)
+        self.text_lang.setGeometry(QtCore.QRect(360, 0, 211, 61))
         font = QtGui.QFont()
         font.setPointSize(27)
-        self.txt_lang.setFont(font)
-        self.txt_lang.setStyleSheet("background-color: rgb(255, 153, 64);\n"
+        self.text_lang.setFont(font)
+        self.text_lang.setStyleSheet("background-color: rgb(255, 153, 64);\n"
 "border-radius: 10px;\n"
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(0, 85, 127);\n"
 "")
-        self.txt_lang.setObjectName("txt_lang")
-        self.vibor_lang = QtWidgets.QComboBox(self.centralwidget)
-        self.vibor_lang.setGeometry(QtCore.QRect(580, 10, 231, 41))
+        self.text_lang.setObjectName("text_lang")
+        self.choice_lang = QtWidgets.QComboBox(self.centralwidget)
+        self.choice_lang.setGeometry(QtCore.QRect(580, 10, 231, 41))
         font = QtGui.QFont()
         font.setPointSize(15)
-        self.vibor_lang.setFont(font)
-        self.vibor_lang.setStyleSheet("background-color: rgb(255, 153, 64);\n"
+        self.choice_lang.setFont(font)
+        self.choice_lang.setStyleSheet("background-color: rgb(255, 153, 64);\n"
 "border-radius: 10px;\n"
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(0, 85, 127);\n"
 "")
-        self.vibor_lang.setMaxVisibleItems(10)
-        self.vibor_lang.setObjectName("vibor_lang")
-        self.vibor_lang.addItem("")
-        self.vibor_lang.addItem("")
-        self.vibor_lang.addItem("")
-        self.vibor_lang.addItem("")
-        self.b_smn_lang = QtWidgets.QPushButton(self.centralwidget)
-        self.b_smn_lang.setGeometry(QtCore.QRect(850, 0, 91, 91))
+        self.choice_lang.setMaxVisibleItems(10)
+        self.choice_lang.setObjectName("choice_lang")
+        self.choice_lang.addItem("")
+        self.choice_lang.addItem("")
+        self.choice_lang.addItem("")
+        self.choice_lang.addItem("")
+        self.btn_change_lang = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_change_lang.setGeometry(QtCore.QRect(850, 0, 91, 91))
         font = QtGui.QFont()
         font.setPointSize(4)
-        self.b_smn_lang.setFont(font)
-        self.b_smn_lang.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));\n"
+        self.btn_change_lang.setFont(font)
+        self.btn_change_lang.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));\n"
 "border-radius: 40px;\n"
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(255, 255, 0);")
-        self.b_smn_lang.setText("")
+        self.btn_change_lang.setText("")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("../../files_to_del/button_1.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.b_smn_lang.setIcon(icon)
-        self.b_smn_lang.setIconSize(QtCore.QSize(64, 64))
-        self.b_smn_lang.setObjectName("b_smn_lang")
-        self.text_toch = QtWidgets.QLabel(self.centralwidget)
-        self.text_toch.setGeometry(QtCore.QRect(0, 450, 221, 61))
+        self.btn_change_lang.setIcon(icon)
+        self.btn_change_lang.setIconSize(QtCore.QSize(64, 64))
+        self.btn_change_lang.setObjectName("btn_change_lang")
+        self.text_detail = QtWidgets.QLabel(self.centralwidget)
+        self.text_detail.setGeometry(QtCore.QRect(0, 450, 221, 61))
         font = QtGui.QFont()
         font.setPointSize(27)
-        self.text_toch.setFont(font)
-        self.text_toch.setStyleSheet("background-color: rgb(255, 153, 64);\n"
+        self.text_detail.setFont(font)
+        self.text_detail.setStyleSheet("background-color: rgb(255, 153, 64);\n"
 "border-radius: 10px;\n"
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(0, 85, 127);\n"
 "")
-        self.text_toch.setObjectName("text_toch")
-        self.txt_vvod = QtWidgets.QLabel(self.centralwidget)
-        self.txt_vvod.setGeometry(QtCore.QRect(0, 160, 191, 81))
+        self.text_detail.setObjectName("text_detail")
+        self.text_input = QtWidgets.QLabel(self.centralwidget)
+        self.text_input.setGeometry(QtCore.QRect(0, 160, 191, 81))
         font = QtGui.QFont()
         font.setPointSize(27)
-        self.txt_vvod.setFont(font)
-        self.txt_vvod.setStyleSheet("background-color: rgb(255, 153, 64);\n"
+        self.text_input.setFont(font)
+        self.text_input.setStyleSheet("background-color: rgb(255, 153, 64);\n"
 "border-radius: 10px;\n"
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(0, 85, 127);\n"
 "")
-        self.txt_vvod.setObjectName("txt_vvod")
-        self.text_otvet = QtWidgets.QLabel(self.centralwidget)
-        self.text_otvet.setGeometry(QtCore.QRect(0, 320, 191, 81))
+        self.text_input.setObjectName("text_input")
+        self.text_result = QtWidgets.QLabel(self.centralwidget)
+        self.text_result.setGeometry(QtCore.QRect(0, 320, 191, 81))
         font = QtGui.QFont()
         font.setPointSize(27)
-        self.text_otvet.setFont(font)
-        self.text_otvet.setStyleSheet("background-color: rgb(255, 153, 64);\n"
+        self.text_result.setFont(font)
+        self.text_result.setStyleSheet("background-color: rgb(255, 153, 64);\n"
 "border-radius: 10px;\n"
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(0, 85, 127);\n"
 "\n"
 "")
-        self.text_otvet.setObjectName("text_otvet")
-        self.b_vyp = QtWidgets.QPushButton(self.centralwidget)
-        self.b_vyp.setGeometry(QtCore.QRect(390, 250, 301, 61))
+        self.text_result.setObjectName("text_result")
+        self.btn_comply = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_comply.setGeometry(QtCore.QRect(390, 250, 301, 61))
         font = QtGui.QFont()
         font.setPointSize(23)
-        self.b_vyp.setFont(font)
-        self.b_vyp.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));\n"
+        self.btn_comply.setFont(font)
+        self.btn_comply.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.153409 rgba(85, 85, 255, 255), stop:1 rgba(255, 65, 0, 255));\n"
 "border-radius: 30px;\n"
 "border: 5px solid rgb(0, 85, 127);\n"
 "color: rgb(255, 255, 0);")
-        self.b_vyp.setObjectName("b_vyp")
-        self.vvod_otvet = QtWidgets.QTextEdit(self.centralwidget)
-        self.vvod_otvet.setGeometry(QtCore.QRect(190, 160, 821, 81))
+        self.btn_comply.setObjectName("btn_comply")
+        self.input_data = QtWidgets.QTextEdit(self.centralwidget)
+        self.input_data.setGeometry(QtCore.QRect(190, 160, 821, 81))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.vvod_otvet.setFont(font)
-        self.vvod_otvet.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+        self.input_data.setFont(font)
+        self.input_data.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
 "border: 5px solid rgb(0, 85, 127);")
-        self.vvod_otvet.setObjectName("vvod_otvet")
-        self.vvod_toch = QtWidgets.QTextEdit(self.centralwidget)
-        self.vvod_toch.setGeometry(QtCore.QRect(220, 450, 291, 61))
+        self.input_data.setObjectName("input_data")
+        self.input_detail = QtWidgets.QTextEdit(self.centralwidget)
+        self.input_detail.setGeometry(QtCore.QRect(220, 450, 291, 61))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.vvod_toch.setFont(font)
-        self.vvod_toch.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+        self.input_detail.setFont(font)
+        self.input_detail.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
 "border: 5px solid rgb(0, 85, 127);")
-        self.vvod_toch.setObjectName("vvod_toch")
-        self.vivid_otvet = QtWidgets.QTextBrowser(self.centralwidget)
-        self.vivid_otvet.setGeometry(QtCore.QRect(190, 320, 821, 81))
+        self.input_detail.setObjectName("input_detail")
+        self.result = QtWidgets.QTextBrowser(self.centralwidget)
+        self.result.setGeometry(QtCore.QRect(190, 320, 821, 81))
         font = QtGui.QFont()
         font.setPointSize(13)
-        self.vivid_otvet.setFont(font)
-        self.vivid_otvet.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+        self.result.setFont(font)
+        self.result.setStyleSheet("background-color: rgb(255, 255, 255);\n"
 "border-radius: 10px;\n"
 "border: 5px solid rgb(0, 85, 127);")
-        self.vivid_otvet.setObjectName("vivid_otvet")
+        self.result.setObjectName("result")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1024, 21))
@@ -156,13 +156,13 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.b_sl_pod.setText(_translate("MainWindow", "Служба поддержки"))
-        self.txt_lang.setText(_translate("MainWindow", "Язык:"))
-        self.vibor_lang.setItemText(0, _translate("MainWindow", "Русский"))
-        self.vibor_lang.setItemText(1, _translate("MainWindow", "English"))
-        self.vibor_lang.setItemText(2, _translate("MainWindow", "中文"))
-        self.vibor_lang.setItemText(3, _translate("MainWindow", "Español"))
-        self.text_toch.setText(_translate("MainWindow", "Точность:"))
-        self.txt_vvod.setText(_translate("MainWindow", "Ввод:"))
-        self.text_otvet.setText(_translate("MainWindow", "Ответ:"))
-        self.b_vyp.setText(_translate("MainWindow", "Выполнить"))
+        self.btn_sup_serv.setText(_translate("MainWindow", "Служба поддержки"))
+        self.text_lang.setText(_translate("MainWindow", "Язык:"))
+        self.choice_lang.setItemText(0, _translate("MainWindow", "Русский"))
+        self.choice_lang.setItemText(1, _translate("MainWindow", "English"))
+        self.choice_lang.setItemText(2, _translate("MainWindow", "中文"))
+        self.choice_lang.setItemText(3, _translate("MainWindow", "Español"))
+        self.text_detail.setText(_translate("MainWindow", "Точность:"))
+        self.text_input.setText(_translate("MainWindow", "Ввод:"))
+        self.text_result.setText(_translate("MainWindow", "Ответ:"))
+        self.btn_comply.setText(_translate("MainWindow", "Выполнить"))

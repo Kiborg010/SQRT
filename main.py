@@ -10,64 +10,64 @@ class Screen_1(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.b_smn_lang.clicked.connect(self.smn_lang)
-        self.b_sl_pod.clicked.connect(self.sl_pod)
-        self.b_vyp.clicked.connect(self.comply)
+        self.btn_change_lang.clicked.connect(self.change_lang)
+        self.btn_sup_serv.clicked.connect(self.sup_serv)
+        self.btn_comply.clicked.connect(self.comply)
 
-    def smn_lang(self):
-        lang = self.vibor_lang.currentText()
+    def change_lang(self):
+        lang = self.choice_lang.currentText()
         if lang == "Русский":
-            self.txt_vvod.setText("Ввод:")
-            self.b_vyp.setText("Выполнить")
-            self.text_otvet.setText("Ответ:")
-            self.text_toch.setText("Точность:")
-            self.b_sl_pod.setText("Служба поддержки")
-            self.txt_lang.setText("Язык:")
+            self.text_input.setText("Ввод:")
+            self.btn_comply.setText("Выполнить")
+            self.text_result.setText("Ответ:")
+            self.text_detail.setText("Точность:")
+            self.btn_sup_serv.setText("Служба поддержки")
+            self.text_lang.setText("Язык:")
         elif lang == "English":
-            self.txt_vvod.setText("Input:")
-            self.b_vyp.setText("Comply")
-            self.text_otvet.setText("Result:")
-            self.text_toch.setText("Accuracy:")
-            self.b_sl_pod.setText("Support service")
-            self.txt_lang.setText("Language:")
+            self.text_input.setText("Input:")
+            self.btn_comply.setText("Comply")
+            self.text_result.setText("Result:")
+            self.text_detail.setText("Accuracy:")
+            self.btn_sup_serv.setText("Support service")
+            self.text_lang.setText("Language:")
         elif lang == "中文":
-            self.txt_vvod.setText("输入:")
-            self.b_vyp.setText("表演/表演")
-            self.text_otvet.setText("回答:")
-            self.text_toch.setText("准确度:")
-            self.b_sl_pod.setText("支援服务")
-            self.txt_lang.setText("语言:")
+            self.text_input.setText("输入:")
+            self.btn_comply.setText("表演/表演")
+            self.text_result.setText("回答:")
+            self.text_detail.setText("准确度:")
+            self.btn_sup_serv.setText("支援服务")
+            self.text_lang.setText("语言:")
         elif lang == "Español":
-            self.txt_vvod.setText("Entrada:")
-            self.b_vyp.setText("Ejecutar")
-            self.text_otvet.setText("Resultado:")
-            self.text_toch.setText("Precisión:")
-            self.b_sl_pod.setText("Servicio al cliente")
-            self.txt_lang.setText("Idioma:")
+            self.text_input.setText("Entrada:")
+            self.btn_comply.setText("Ejecutar")
+            self.text_result.setText("Resultado:")
+            self.text_detail.setText("Precisión:")
+            self.btn_sup_serv.setText("Servicio al cliente")
+            self.text_lang.setText("Idioma:")
 
-    def test_number(self, vvod):
+    def test_number(self, input):
         true = "0123456789"
-        count_vern = 0
-        for el in vvod:
+        count_true = 0
+        for el in input:
             if el in true:
-                count_vern += 1
-        return count_vern == len(vvod)
+                count_true += 1
+        return count_true == len(input)
 
 
-    def sl_pod(self):
+    def sup_serv(self):
         url = QUrl("https://www.hse.ru/org/persons/4200771")
         QDesktopServices.openUrl(url)
 
     def comply(self):
-        vvod1 = self.vvod_otvet.toPlainText()
-        vvod2 = self.vvod_toch.toPlainText()
-        if (self.test_number(vvod1)) and (self.test_number(vvod2)):
-            if vvod2 == "":
-                self.vivid_otvet.setText(str(sqrt(int(vvod1))))
+        input_data = self.input_data.toPlainText()
+        input_detail = self.input_detail.toPlainText()
+        if (self.test_number(input_data)) and (self.test_number(input_detail)):
+            if input_detail == "":
+                self.result.setText(str(sqrt(int(input_data))))
             else:
-                self.vivid_otvet.setText(str(round(sqrt(int(vvod1)), int(vvod2))))
+                self.result.setText(str(round(sqrt(int(input_data)), int(input_detail))))
         else:
-            self.vivid_otvet.setText("")
+            self.result.setText("")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
