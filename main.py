@@ -92,6 +92,7 @@ if __name__ == "__main__":
     widget = QtWidgets.QStackedWidget()
     screen_1 = Screen_1()
     widget.addWidget(screen_1)
+    widget.setWindowTitle("Square")
     widget.setFixedHeight(576)
     widget.setFixedWidth(1024)
     widget.show()
