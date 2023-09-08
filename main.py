@@ -2,7 +2,7 @@ import sys
 from math import sqrt
 from PyQt5.Qt import QUrl, QDesktopServices
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtGui
 from window import Ui_MainWindow
 import numexpr as ne
 
@@ -80,7 +80,6 @@ class Screen_1(QMainWindow, Ui_MainWindow):
         except TypeError:
             self.give_error()
 
-
     def clear(self):
         self.input_data.setText("")
         self.result.setText("")
@@ -93,6 +92,7 @@ if __name__ == "__main__":
     screen_1 = Screen_1()
     widget.addWidget(screen_1)
     widget.setWindowTitle("Square")
+    widget.setWindowIcon(QtGui.QIcon("data/icon.png"))
     widget.setFixedHeight(576)
     widget.setFixedWidth(1024)
     widget.show()
