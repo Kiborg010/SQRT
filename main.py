@@ -43,14 +43,6 @@ class Screen_1(QMainWindow, Ui_MainWindow):
                                   "Barrer",
                                   self.text_error.toPlainText() == "", "Error de entrada")
 
-    def test_detali(self, input):
-        true = "0123456789"
-        count_true = 0
-        for el in input:
-            if el in true:
-                count_true += 1
-        return count_true == len(input)
-
     def sup_serv(self):
         url = QUrl("https://www.hse.ru/org/persons/4200771")
         QDesktopServices.openUrl(url)
@@ -78,6 +70,8 @@ class Screen_1(QMainWindow, Ui_MainWindow):
         except SyntaxError:
             self.give_error()
         except TypeError:
+            self.give_error()
+        except ValueError:
             self.give_error()
 
     def clear(self):
