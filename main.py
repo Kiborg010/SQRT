@@ -44,7 +44,7 @@ class Screen_1(QMainWindow, Ui_MainWindow):
                                   self.text_error.toPlainText() == "", "Error de entrada")
 
     def sup_serv(self):
-        url = QUrl("https://www.hse.ru/org/persons/4200771")
+        url = QUrl("http://127.0.0.1:8080/")
         QDesktopServices.openUrl(url)
 
     def give_error(self):
